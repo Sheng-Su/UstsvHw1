@@ -1,4 +1,9 @@
--- Prepare a list of offices sorted by country, state, city.
+/*
+Prepare a list of offices sorted by country, state, city.
+ 
+Key op:
+    order by    
+*/
 
-select territory from offices   -- extract column "territory" from subtable "offices"
-    order by country, state, city;  -- sorted by "country", then by "state", and then by "city"
+select territory from offices   -- print column "territory" from subtable "offices"
+    order by country, state, city;  -- sort by "country", then by "state", and then by "city"

@@ -1,3 +1,7 @@
--- How many employees are there in the company?
+/*
+How many employees are there in the company?
 
-select count(*) from employees; -- show the count of all the records in the subtable "employees"
+Key op:
+    count()
+*/
+select count(*) from employees; -- print the count of rows in the subtable "employees"
