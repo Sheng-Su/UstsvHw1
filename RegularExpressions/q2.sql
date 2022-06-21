@@ -1,5 +1,5 @@
 /*
-Find products containing the name 'Ford'.
+List products ending in 'ship'.
 
 Key op:
     like    -- the condition statement regulating patterns
@@ -9,4 +9,4 @@ Key op:
 use classicmodels;
 
 select * from products
-    where productName like "%Ford%";
+    where productName like "%ship";
