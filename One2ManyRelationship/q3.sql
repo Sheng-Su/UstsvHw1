@@ -7,6 +7,6 @@ Key op:
 
 use classicmodels;
 
-select paymentDate, sum(amount) as 'Total payments'
+select paymentDate, sum(amount) as "Total payments"
     from payments
     group by paymentDate;

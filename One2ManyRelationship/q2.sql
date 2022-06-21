@@ -7,7 +7,7 @@ Key op:
 
 use classicmodels;
 
-select customers.customerName, sum(payments.amount) as 'Total payments'
+select customers.customerName, sum(payments.amount) as "Total payments"
     from payments
     inner join customers on payments.customerNumber = customers.customerNumber
-    where customers.customerName = 'Atelier graphique';
+    where customers.customerName = "Atelier graphique";

@@ -8,6 +8,6 @@ Key op:
 
 use classicmodels;
 
-select customerName, concat(employees.firstName, ' ', employees.lastName) as 'Account representative'
+select customerName, concat(employees.firstName, ' ', employees.lastName) as "Account representative"
     from customers 
     inner join employees on customers.salesRepEmployeeNumber = employees.employeeNumber;
