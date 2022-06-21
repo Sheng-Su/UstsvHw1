@@ -6,6 +6,8 @@ Key op:
     inner join ... on ...   -- connect tables by related columns
 */
 
+use classicmodels;
+
 select customerName, concat(employees.firstName, ' ', employees.lastName) as 'Account representative'
     from customers 
     inner join employees on customers.salesRepEmployeeNumber = employees.employeeNumber;
